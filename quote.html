@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html>
-
-<!--https://codepen.io/freeCodeCamp/full/qRZeGZ
-
-
-MAKE IT LIKE HIM
-https://www.daniweb.com/programming/software-development/threads/385691/random-selection-from-list-without-repeats
-
-https://www.oreilly.com/library/view/python-cookbook/0596001673/ch02s09.html
-RESOURCES FOR QUOTE BOX-->
-
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman|Crimson+Text|Josefin+Sans|Niramit|PT+Sans|Raleway|Roboto+Condensed|Roboto+Mono|Roboto:700">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
@@ -18,10 +8,12 @@ RESOURCES FOR QUOTE BOX-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>QuotePage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="stylesheet" type="text/css" media="screen" href="quote.css" />
 
 </head>
-<div class="navbar" id="navbar">
+<body id="body">
+ <div class="navbar" id="navbar">
     <a href="Motivational.html">Motivational</a>
     <a href="LifeQuotes.html">Life Quotes</a>
     <a href="Friendship.html">Friendship</a>
@@ -42,8 +34,6 @@ RESOURCES FOR QUOTE BOX-->
       </div>
 
 
-
-<body id="body">
     <div class="inpawti">
         <input type="button" id="button" value="Push The Quote" onclick="check();">
     </div>
@@ -80,6 +70,7 @@ RESOURCES FOR QUOTE BOX-->
 
 </body>
 <script>
+    /* Short quotes
     var quotes = ["Ar-Rahman (الرحمن) The All-Compassionate",
     "Ar-Rahim (الرحيم) The All-Merciful",
     "Al-Malik (الملك) The Absolute Ruler",
@@ -95,6 +86,7 @@ RESOURCES FOR QUOTE BOX-->
     "13 Al-Musawwir (المصور) The Shaper of Beauty",
     "14 Al-Ghaffar (الغفار) The Forgiving",
     "15 Al-Qahhar (القهار) The Subduer"]
+    */
 
 
     var quotess = [
@@ -168,7 +160,7 @@ RESOURCES FOR QUOTE BOX-->
     })
     */
 
-    /* NAVBARIII */
+    /* NAVBAR */
     function myFunction() {
         var x = document.getElementById("navbar");
         if (x.className === "navbar") {
