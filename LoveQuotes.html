@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<!--https://codepen.io/freeCodeCamp/full/qRZeGZ
+
+
+MAKE IT LIKE HIM-->
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman|Crimson+Text|Josefin+Sans|Niramit|PT+Sans|Raleway|Roboto+Condensed|Roboto+Mono|Roboto:700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LoveQuotePage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="quote.css" />
+
+</head>
+ <div class="navbar" id="navbar">
+        <a href="Motivational.html">Motivational</a>
+        <a href="LifeQuotes.html">Life Quotes</a>
+        <a href="Friendship.html">Friendship</a>
+        <a href="quote.html">General Quotes</a>
+        <a href="SchoolQuotes.html">School Quotes</a>
+        <a href="FunnyQuotes.html">Funny Quotes</a>
+    
+        
+        <!---<a href="work.html">Funny Quotes</a>
+        <a href="contact.html">School Quotes</a>-->
+
+    </div>
+    
+    <h1 class="h1shi">Quotes About Love</h1>
+<body id="body">
+    <div class="inpawti">
+        <input type="button" id="button" value="Push The Quote" onclick="check();">
+    </div>
+
+    <div id="box" class="box"> 
+    <h2 id="ndryshimi"></h2>
+
+    <a href="https://twitter.com/share"  target="_blank">
+        <i class="fab fa-twitter-square fa-2x"></i>
+        </a>
+        <a  href="https://www.tumblr.com/login?redirect_to=https%3A%2F%2Fwww.tumblr.com%2Fwidgets%2Fshare%2Ftool%3Fposttype%3Dquote%26tags%3Dquotes%252Cfreecodecamp%26caption%3DChinese%2BProverb%26content%3DThe%2Bperson%2Bwho%2Bsays%2Bit%2Bcannot%2Bbe%2Bdone%2Bshould%2Bnot%2Binterrupt%2Bthe%2Bperson%2Bwho%2Bis%2Bdoing%2Bit.%26canonicalUrl%3Dhttps%253A%252F%252Fwww.tumblr.com%252Fbuttons%26shareSource%3Dtumblr_share_button" target="_blank" >
+        <i  class="fab fa-tumblr-square fa-2x"></i>
+        </a> 
+    </div>
+ 
+    <!--  
+        <div class="inpawti">
+            <input type="button" id="button" value="PSE KSHAU GJALIT I THOJNI!!!" onclick="check1();">
+        </div>
+        <p id="ndryshimi1"></p>
+
+    </div>
+    -->
+
+    <footer>
+        <p>Created By Behar Bakiu</p>
+        <p>Email me at <a href="mailto:bakiubali@gmail.com">bakiubali@gmail.com</a></p>
+    </footer>
+
+    <style>
+            body{
+                background: url("imgg/Love.jpg");
+                background-size:cover;
+              
+            }
+           
+        </style>
+
+
+
+</body>
+<script>
+
+
+    var quotes = ["“Create the highest, grandest vision possible for your life, because you become what you believe”",
+        "“When you can’t find the sunshine, be the sunshine”", "“The grass is greener where you water it”",
+        "“Wherever life plants you, bloom with grace”",
+        "“So, what if, instead of thinking about solving your whole life, you just think about adding additional good things.”",
+        "“Little by little, day by day, what is mean for you WILL find its way”",
+        "“Don’t forget you’re human. It’s okay to have a meltdown. Just don’t unpack and live there. Cry it out. Then refocus on where you’re headed”",
+        "“An arrow can only be shot by pulling it backward. When life is dragging your back with difficulties, it means it’s going to launch you into something great.”",
+        "“A great attitude becomes a great day which becomes a great month which becomes a great year which becomes a great life”",
+        "“I am in charge of how I feel and today I am choosing happiness”",
+        "“Happiness is letting go of what you think your life is supposed to look like ”",
+        "“If you have good thoughts they will shine out of your face like sunbeams and you will always look lovely”",
+        "“Take time to do what makes your soul happy”", "“Love For All, Hatred For None”",
+        "“Every moment is a fresh beginning", "“Aspire to inspire before we expire”", "Die with memories, not dreams”",
+        "“Never regret anything that made you smile”"
+    ]
+    
+    var colors = ["white","lightgreen","greenyellow","lightblue","lightpink","lightsalmon","lightcyan"]
+
+    function check() {
+        document.getElementById("ndryshimi").style.opacity = "1";
+        document.getElementById("ndryshimi").innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
+        document.getElementById("box").style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function check1() {
+        document.getElementById("ndryshimi1").innerHTML = phrase1[Math.floor(Math.random() * phrase1.length)];
+    }
+    document.getElementById("ndryshimi").style.visibility = "hidden";
+    document.getElementById("button").addEventListener("mouseup", function () {
+        document.getElementById("ndryshimi").style.visibility = "visible";
+
+    })
+    document.getElementById("box").style.visibility = "hidden";
+    document.getElementById("button").addEventListener("mouseenter", function () {
+        document.getElementById("box").style.visibility = "visible";
+
+    })
+    /* NQOFSE DON SA TA HEKSH MAUSIN T HIQEN TEXT/SENDET
+    document.getElementById("button").addEventListener("mouseleave", function () {
+        document.getElementById("box").style.visibility = "hidden";
+        document.getElementById("ndryshimi").style.visibility = "hidden";
+
+    })
+    */    
+
+
+</script>
+
+</html>
